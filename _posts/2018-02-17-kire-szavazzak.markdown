@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-01-31 15:08:28 +0100
-categories: jekyll update
+title:  "Kire szavazzak?"
+date:   2018-02-17 10:38:00 +0100
+categories: help
 ---
 
 |Párt                 |Jelölt                |Program                      |
