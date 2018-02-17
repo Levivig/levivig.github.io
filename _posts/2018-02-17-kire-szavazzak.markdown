@@ -13,4 +13,5 @@ categories: help
 |Munkáspárt                      |Sípos Sándor            |[Letöltés](https://munkaspart.hu/images/tartalom/szorolapok/2018_program/magyar_munkaspart_program.pdf)            |
 |LMP                             |Radics Péter                 |[Letöltés](http://lehetmas.hu/wp-content/uploads/2017/12/LMP_)                           |
 |Jobbik                          |Rigán István                 |¯\_(ツ)_/¯                                                                               |
-|Fidesz-KDNP                     |Bodó Sándor                |¯\_(ツ)_/¯                                                                                 |
+|Fidesz-KDNP                     |Bodó Sándor                |¯\_(ツ)_/¯                                                                                 
+|
