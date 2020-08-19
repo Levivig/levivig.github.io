@@ -21,7 +21,7 @@ By using our website or apps, you consent to our privacy policy.
 
 If you have any questions regarding this privacy policy, you may email workout-buddy@levivig.dev.
 
-# Changes to This Policy
+## Changes to This Policy
 
 We reserve the right to modify this privacy policy at any time, so please review it frequently.
 
