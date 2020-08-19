@@ -25,4 +25,4 @@ If you have any questions regarding this privacy policy, you may email workout-b
 
 We reserve the right to modify this privacy policy at any time, so please review it frequently.
 
-March 15, 2019: First published.
+August 19, 2020: First published.
