@@ -19,7 +19,7 @@ By using our website or apps, you consent to our privacy policy.
 
 ## Contact Information
 
-If you have any questions regarding this privacy policy, you may email [mailto:workout-buddy@levivig.dev]workout-buddy@levivig.dev.
+If you have any questions regarding this privacy policy, you may email [workout-buddy@levivig.dev](mailto:workout-buddy@levivig.dev).
 
 ## Changes to This Policy
 
