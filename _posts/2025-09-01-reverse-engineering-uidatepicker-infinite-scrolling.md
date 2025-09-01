@@ -6,11 +6,15 @@ categories: ios development reverse-engineering
 tags: [iOS, UIKit, UIDatePicker, reverse-engineering, LLDB]
 ---
 
-Ever wondered how Apple achieves that smooth, infinite scrolling effect in UIDatePicker? I spent some time digging into the internals using LLDB and discovered their surprisingly simple approach.
+Ever wondered how Apple achieves that smooth, infinite scrolling effect in UIDatePicker? After seeing [this Twitter post](https://x.com/skydotcs/status/1962160670134444283) claiming the picker isn't actually infinite and has an end, I decided to dig into the internals using LLDB to see how it really works. What I discovered was their surprisingly simple approach.
+
+![UIDatePicker Interface](/assets/images/datepicker-layout.png)
 
 ## The Architecture
 
 UIDatePicker uses multiple `UIPickerTableView` instances - one for hours, one for minutes. Each tableview implements infinite scrolling using a classic "multiplier" technique rather than complex repositioning logic.
+
+![UIDatePicker TableView Structure](/assets/images/datepicker-tableview.png)
 
 ## Key Findings
 
@@ -20,6 +24,8 @@ UIDatePicker uses multiple `UIPickerTableView` instances - one for hours, one fo
 po [[dataSource] tableView:tableView numberOfRowsInSection:0]
 0x0000000000002710  // 10,000 in hex
 ```
+
+![LLDB Debugging in Xcode](/assets/images/datepicker-xcode.png)
 
 Apple uses exactly **10,000 rows** for each wheel. This provides ~416 full cycles of 24 hours, which is more than sufficient for any practical use case.
 
