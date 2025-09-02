@@ -35,13 +35,15 @@ The display logic is straightforward:
 
 **Hours**: `displayHour = (row % 24) + 1`, then convert 24 to "00"
 - Row 0 → "01" 
-- Row 23 → "00"
-- Row 24 → "01" (cycles)
+- Row 15 → "16" (4 PM)
+- Row 23 → "00" (midnight)
+- Row 24 → "01" (cycles back to 1 AM)
 
 **Minutes**: `displayMinute = row % 60`
 - Row 0 → "00"
+- Row 30 → "30" (half past)
 - Row 59 → "59" 
-- Row 60 → "00" (cycles)
+- Row 60 → "00" (cycles back to :00)
 
 ### 3. Smart Default Positioning
 
@@ -86,11 +88,11 @@ Here's how you might implement similar infinite scrolling:
 
 ```swift
 class InfiniteTimePicker: UITableViewController {
-    private let multiplier = 10000
+    private let totalRows = 10000
     private let centerOffset = 5000
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 24 * multiplier
+        return totalRows
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
